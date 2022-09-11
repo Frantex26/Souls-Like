@@ -1,0 +1,45 @@
+/* ---------------------------------- PLOT ---------------------------------- */
+.section-4{
+    h2 {
+        font-family: $font-title;
+        font-size: nth($size, 3);
+        @include color ($colores);
+        @extend %margin-plot;
+    }
+    p {
+        font-family: $font-text;
+        font-size: nth($size, 1);
+        color: nth($color, 1);
+        border: map-get($plot, border-style);
+        border-radius: map-get($plot, border-radius);
+        padding: 20px;
+    }
+}
+
+.section-plot {
+    background-color: $bg-black;
+    border: map-get($plot, border-style);
+    border-radius: 25px;
+    @extend %margin-plot;
+    .section-5{
+        h3{
+            font-family: $font-title;
+            font-size: nth($size, 2);
+            color: nth($color, 2);
+            text-decoration: underline;
+            text-decoration-color: #dd9105e3;
+            margin: 8px;
+        }
+        p{
+            font-family: $font-text;
+            font-size: nth($size, 1);
+            color: nth($color, 3);
+        }
+    }
+}
+
+.gallery{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+

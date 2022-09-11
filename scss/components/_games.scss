@@ -1,0 +1,72 @@
+/* ---------------------------------- GAMES --------------------------------- */
+
+.section-6 {
+    @include flex-column();
+    border:  #880000, solid, 2px;
+    margin: 1rem;
+    h2 {
+        font-family: $font-title;
+        font-size: 3rem;
+        @include color ($colores);
+        padding-bottom: 1rem;
+        @extend %margin-games;
+    }
+    p {
+        font-family: $font-text;
+        font-size: 2.5rem;
+        color: nth($color, 4);
+        border: map-get($games, border-style);
+        border-radius: map-get($games, border-radius);
+        padding: 10px;
+    }
+}
+
+
+
+.div-h3 {
+    font-family: $font-title;
+    font-size: 3rem;
+    @include color ($colores);
+    margin: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    border: #e00808ee ridge 5px;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 8px;
+    h3{
+        font-size: 25px;
+    }
+}
+
+.div-games {
+    @include flex-row();
+    border: #d85905ee ridge 5px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    p {
+        width: 90%;
+        font-family: $font-text;
+        font-size: 2rem;
+        color: nth($color, 5);
+        margin: 3rem;
+    }
+    img {
+        width: 100%;
+    }
+}
+.games-p{
+    width: 100%;
+}
+.games-img{
+    width: 100%;
+}
+
+@media screen and (max-width: 820px){
+    .div-games{
+        display: flex;
+        flex-direction: column;
+    }
+}
